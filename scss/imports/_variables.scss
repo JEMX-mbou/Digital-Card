@@ -1,0 +1,28 @@
+$normalfont: 'Jost', sans-serif;
+$titlefont: 'Satisfy', cursive;
+
+$colors: (
+  1: #164059,
+  2: #F2B705,
+  3: #F2B84B,
+  4: #D99F59,
+  5: #A67A53
+);
+
+@function color($num) {
+  @return map-get($colors, $num);
+}
+
+$black: ();
+$white: ();
+
+@for $i from 1 through 9 {
+  $bl: ($i: rgba( 0, 0, 0, ($i / 10) ));
+  $black: map-merge( $black, $bl );
+
+  $wh: ($i: rgba( 255, 255, 255, ($i / 10) ));
+  $white: map-merge( $white, $wh );
+}
+
+@function black($num) { @return map-get($black, $num); }
+@function white($num) { @return map-get($white, $num); }

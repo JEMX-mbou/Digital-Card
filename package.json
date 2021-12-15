@@ -1,0 +1,24 @@
+{
+  "name": "digital-card",
+  "version": "1.0.0",
+  "description": "A digital card that can be used for Christmas and other festivities. ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss -o css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JEMX-mbou/Digital-Card.git"
+  },
+  "author": "Jesse Malotaux <jemx@mboutrecht.nl>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JEMX-mbou/Digital-Card/issues"
+  },
+  "homepage": "https://github.com/JEMX-mbou/Digital-Card#readme",
+  "devDependencies": {
+    "@erikwatson/snowfall": "^3.0.4",
+    "node-sass": "^7.0.0"
+  }
+}

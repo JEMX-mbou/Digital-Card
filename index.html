@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,500;1,200;1,500&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/styling.css">
+  </head>
+  <body>
+    <!-- This is the element used for the snowfall -->
+    <div id="snow-container"></div>
+
+    <div id="message-container" class="container">
+      <div id="main-message" class="row">
+        <div class="col-s-12 col-m-8 jc-center">
+          <div class="col-s-12 col-l-6">
+            <img id="christmas-tree" src="img/christmas-tree.svg" alt="">
+          </div>
+          <div id="message-content" class="col-s-12 col-l-6 ac-flex-start center">
+            <h1>Merry Christmas</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nesciunt voluptatem dolores blanditiis alias.</p>
+            <button class="style2 bordered">Open bericht</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="container flex jc-center ai-center">
+        <div class="modal-content col-s-12 col-l-12 jc-flex-start">
+          <h2>Modal titel</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est obcaecati consequatur repellat aut sed, adipisci nemo iusto esse ducimus sit vel molestiae repudiandae recusandae ea quae! Facilis aut aliquid neque.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="node_modules\@erikwatson\snowfall\dist\snowfall.min.js"></script>
+    <script>
+      // This function starts the snowfall.
+      snowfall.start()
+    </script>
+  </body>
+</html>
